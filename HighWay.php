@@ -18,7 +18,13 @@ abstract class HighWay
      */
     protected $maxSpeed;
 
-    abstract public function addVehicle($vehicle);
+    protected function __construct(int $nbLane, int $maxSpeed)
+    {
+        $this->nbLane = $nbLane;
+        $this->maxSpeed = $maxSpeed;
+    }
+
+    abstract public function addVehicle(Vehicle $vehicle);
 
     /**
      * @return array

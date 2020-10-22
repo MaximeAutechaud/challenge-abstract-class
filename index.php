@@ -10,9 +10,9 @@ require_once 'initiation-POO-2/Truck.php';
 require_once 'initiation-POO-2/Bike.php';
 require_once 'initiation-POO-2/Skateboard.php';
 
-$motorWay = new MotorWay();
-$pedestrianWay = new PedestrianWay();
-$residentialWay = new ResidentialWay();
+$motorWay = new MotorWay(2, 130);
+$pedestrianWay = new PedestrianWay(2, 130);
+$residentialWay = new ResidentialWay(2, 130);
 
 $car = new Car('bleu', 3, "fuel");
 $bike = new Bike('black', 1);
